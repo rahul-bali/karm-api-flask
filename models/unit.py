@@ -10,7 +10,7 @@ class Unit(db.Model):
     active = db.Column(db.Boolean(True))
     about = db.Column(db.String(25))
     avatar_link = db.Column(db.String(250))
-    id_badges = db.Column(user.py)
+    ## id_badges = db.Column(user.py)
     ## portfolio images
 
     def __init__(self, name, description):

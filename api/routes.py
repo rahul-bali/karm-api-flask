@@ -13,8 +13,11 @@ def get():
 '''
 
 # Init Schema
-unit_schema = UnitSchema(strict=True)
-units_schema = UnitSchema(many=True, strict=True)
+# unit_schema = UnitSchema(strict=True)
+# units_schema = UnitSchema(many=True, strict=True)
+
+unit_schema = UnitSchema()
+units_schema = UnitSchema(many=True)
 
 
 # Create a unit

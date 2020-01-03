@@ -11,11 +11,16 @@ class User(db.Model):
     created_on = db.Column(db.DateTime())
     active = db.Column(db.Boolean(True))
     category = db.Column(db.Enum())
-    owner = db.Column(category.name)
+    ## owner = db.Column(category.name)
 
     def __init__(self, name, description):
+        self.id = id
         self.name = name
         self.description = description
+        self.title = title
+        self.created_on = created_on
+        self.active = active
+        self.category = category
 
 
 # User Schema
